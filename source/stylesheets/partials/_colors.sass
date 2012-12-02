@@ -1,0 +1,80 @@
+$color: red
+$color: #3D79D0
+
+
+.sc-player
+  font: 12px arial, sans-serif
+  background-color: $color
+  color: #333
+  font-size: 0.6em
+  line-height: 1.6em
+  font-weight: bold
+  a
+    text-decoration: none
+    color: #333
+
+/* scrubber*/
+
+.sc-scrubber
+  background-color: $color
+  .sc-time-span
+    background-color: #fff
+    img
+      height: 80px
+      width: 100%
+      background-color: $color
+  .sc-buffer
+    background-color: #fff
+    opacity: 0.4
+  .sc-played
+    background-color: #333
+    opacity: 0.4
+
+/* controls*/
+
+.sc-player
+  .sc-controls a
+    color: transparent
+    background: url('/images/sc-player/play.png')
+    &:hover
+      background: url('/images/sc-player/play-hover.png')
+    &.sc-pause
+      background: url('/images/sc-player/play.png')
+      &:hover
+        background: url('/images/sc-player/play-hover.png')
+  &.playing .sc-controls a.sc-pause
+    background: url('/images/sc-player/pause.png')
+    &:hover
+      background: url('/images/sc-player/pause-hover.png')
+
+.sc-scrubber .sc-time-indicators
+  background: #fff
+  color: $color
+  padding: 4px
+
+/* Track listings*/
+
+.sc-player ol.sc-trackslist li
+  background: #e5e5e5
+  padding: 5px
+  &.active, &:hover
+    background-color: #fff
+    padding: 5px
+    color: $color
+  &.active a
+    color: $color
+
+.sc-track-duration
+  text-align: right
+  float: right
+  padding: 0 5px
+  margin-left: 5px
+
+/* remote control*/
+
+a.sc-remote-link
+  background: url('/images/sc-player/play.png') top left no-repeat
+  padding-left: 20px
+  text-decoration: none
+  &.playing
+    background-image: url('/images/sc-player/pause.png')

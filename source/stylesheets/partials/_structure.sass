@@ -1,0 +1,72 @@
+.sc-player
+  width: 400px
+  position: relative
+  margin-bottom: 20px
+  ol, li
+    margin: 0
+    padding: 0
+    list-style-position: inside
+  .sc-artwork-list
+    display: none
+  .sc-controls
+    position: absolute
+    width: 22px
+    height: 22px
+    top: 30px
+    left: 0
+    z-index: 5000
+    a
+      display: block
+      width: 22px
+      height: 22px
+      &.sc-pause
+        display: none
+  &.playing .sc-controls a
+    &.sc-play
+      display: none
+    &.sc-pause
+      display: block
+
+
+/* scrubber */
+
+.sc-scrubber
+  position: absolute
+  top: 0px
+  height: 80px
+  width: 100%
+  .sc-time-span
+    height: 80px
+    position: relative
+  .sc-buffer, .sc-played
+    height: 80px
+    position: absolute
+    top: 0
+  .sc-time-indicators
+    position: absolute
+    right: 0
+    top: 30px
+
+/* tracks */
+
+/* Track listings */
+
+.sc-player
+  ol.sc-trackslist
+    width: 100%
+    padding: 90px 0 5px 0
+    li
+      width: 385px
+      cursor: pointer
+      margin: 5px 0
+      padding: 10px 0
+      list-style: none
+  .sc-info
+    display: none
+  .sc-info-toggle
+    display: none
+  .sc-info-close
+    display: none
+  .hidden
+    display: none
+

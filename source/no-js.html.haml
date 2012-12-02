@@ -1,0 +1,40 @@
+.sc-player2
+  %ol.sc-artwork-list
+    %li.active
+      .sc-no-artwork No Artwork
+    %li
+      .sc-loading-artwork Loading Artwork
+
+  .sc-info
+    %h3
+      %a{:href => "#"} Introduccion | Como explicar la luz
+    %h4
+      by
+      %a{:href => "#"} flaminio music
+    %p
+      Despierta Dios... despierto yo...
+    %a.sc-info-close{:href => "#"} X
+  .sc-controls
+    %a.sc-play{:href => "#play"} Play
+    %a.sc-pause.hidden{:href => "#pause"} Pause
+  %ol.sc-trackslist
+    %li.active
+      %a{:href => "#"} Introduccion | Como explicar la luz
+      %span.sc-track-duration 3.46
+    %li
+      %a{:href => "#"} De bares
+      %span.sc-track-duration 2.20
+
+  %a.sc-info-toggle{:href => "#info"} Info
+  .sc-scrubber
+    .sc-volume-slider
+      %span.sc-volume-status{:style => "width:80%"}
+    .sc-time-span
+      .sc-waveform-container
+        %img{:src => "http://w1.sndcdn.com/MbVa5pg1c0Qv_m.png"}/
+      .sc-buffer
+      .sc-played
+    .sc-time-indicators
+      %span.sc-position 0.00
+      |
+      %span.sc-duration 3.46

@@ -1,6 +1,6 @@
 SSH_USER = 'hormigon'
 SSH_HOST = 'cooph.com.ar'
-SSH_DIR  = 'kenny'
+SSH_DIR  = 'flaminio'
 
 
 desc "Build the website from source"

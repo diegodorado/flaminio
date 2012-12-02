@@ -1,12 +1,25 @@
 @import "compass"
-@import "sc-player-standard.css"
+
+@import "partials/font-awesome"
+@import "partials/standards" 
+@import "partials/structure"
+@import "partials/colors"
+
 
 +global-reset
 
 body
   width: 100%
+  font-family: 'Nothing You Could Do'
 
 #oc
   width: 100%
   background: image-url('bg1.jpg')
   +background-size(cover)
+ 
+#ic
+  width: 800px
+  margin: 0 auto
+
+.sc-play
+  @extend .icon-play
